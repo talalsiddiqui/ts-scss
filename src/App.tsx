@@ -1,4 +1,5 @@
 import React from 'react'
+import { withLocalize, LocalizeProvider } from 'react-localize-redux'
 import { Router } from 'react-router-dom'
 import storeConfig from './configureStore'
 import { Provider } from 'react-redux'
@@ -13,12 +14,14 @@ function App() {
   return (
     <div className='main-container'>
       <Provider store={store}>
-        <Router history={history}>
-          <Routes />
-        </Router>
+        <LocalizeProvider>
+          <Router history={history}>
+            <Routes />
+          </Router>
+        </LocalizeProvider>
       </Provider>
     </div>
   )
 }
 
-export default App
+export default withLocalize(App)
