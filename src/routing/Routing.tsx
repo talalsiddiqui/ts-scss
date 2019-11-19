@@ -17,7 +17,7 @@ const Routing = ({ initialize, addTranslationForLanguage }: IRoutingProps) => {
       ],
       options: {
         renderToStaticMarkup,
-        defaultLanguage: 'sv',
+        defaultLanguage: 'en',
       },
     })
     addTranslationForLanguage(english, 'en')
