@@ -28,6 +28,7 @@
     "eject": "react-scripts eject",
     "clean": "rm -rf build",
     "lint": "npm run eslint:check",
+    "start-mock-api": "node mock-api/index.js",
     "eslint:check": "eslint .",
     "lint:fix": "eslint 'src/**/*.{ts,tsx,js}' --fix",
     "cover": "npm run test --coverage"
@@ -48,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "@frontend/deploy": "file:../deploy",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "eslint": "^6.6.0",
@@ -61,6 +61,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
   }
 }
