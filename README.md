@@ -2,8 +2,6 @@
 
 > The "reg-app" is the mobile web app where our customers can easily report their activities.
 
----
-
 ## Getting started
 
 **Prerequisites**
